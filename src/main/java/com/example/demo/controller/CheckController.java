@@ -19,7 +19,7 @@ public class CheckController {
 	
 	// 相関項目チェックの実行
 	@PostMapping
-	public String check(@Validated SampleForm from,
+	public String check(@Validated SampleForm form,
 			BindingResult bindingResult, Model model) {
 			// バリエーションの実施
 		if (bindingResult.hasErrors()) {
